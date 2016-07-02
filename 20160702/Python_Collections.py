@@ -17,6 +17,6 @@ craftsmen[0] = 20
 print (craftsmen)'''
 
 for name,last,age in zip(craftsmen,last_names,ages):
-    print ("Hello I am {0} {1} \n I am {2}" .format(name,last,age))
+    print ("Hello I am {0} {1} \n I am {2} old" .format(name,last,age))
 
 
