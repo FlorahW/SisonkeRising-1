@@ -1,8 +1,15 @@
-my_sisonke_rising_crew = ['Johannes','Florah','Collen','Emmanuel','Vuyisile','Tefo','Wiseman']
-print(my_sisonke_rising_crew[0])
+craftsmen = ['Johannes','Florah','Collen','Emmanuel','Vuyisile','Tefo','Wiseman']
+print(craftsmen[0])
 
-my_sisonke_rising_crew.append('Xolani')
-print (my_sisonke_rising_crew)
+craftsmen.append('Xolani')
+print (craftsmen)
 
-del my_sisonke_rising_crew[2], my_sisonke_rising_crew[0]
-print(my_sisonke_rising_crew)
+del craftsmen[2], craftsmen[0]
+print(craftsmen)
+
+
+craftsmen[0] = 20
+print (craftsmen)
+
+for name in craftsmen:
+    print ("Hello I am " + str(name))
