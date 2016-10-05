@@ -1,26 +1,17 @@
-'''my_cars = ["Honda","Ford","Jeep","Chervolet SS"]
+from tkinter import *
+
+tk = Tk()
+
+  
+
+MY_CARS= {1 : 'Honda', 2 : 'Ford', 3 : 'Jeep', 4 : 'Chervolet SS', 5 : 'BMW'}
+
+def display_cars(MY_CARS):
+    for cars in MY_CARS:
+        print(cars ,MY_CARS[cars]) 
 
 
-my_cars.append("BMW")
-
-del my_cars[0]
-
-for car in range(0,4):
-    print (car,my_cars[car])'''
-    
-
-my_cars = {1 : 'Honda', 2 : 'Ford', 3 : 'Jeep', 4 : 'Chervolet SS', 5 : 'BMW'}
-
-def display(my_cars):
-
-    return(my_cars)
-#for cars in my_cars:
-    #print(cars ,my_cars[cars]) #THE CODE EXECUTES THE KEY AND VALUE.
-    
-
-display(my_cars)  
-
-
-
-
-
+canvas = Canvas (Tk(), width = 400 , height = 400)
+canvas.pack()
+btn = Button (canvas,text = 'Display Cars', command = display_cars(MY_CARS))
+btn.pack()
